@@ -38,7 +38,7 @@ class Sudoku_Solver(object):
 
     def solveSudoku(self, size, matrix):
         l = [0,0]
-        if self.find_empty_box(matrix, l , size):
+        if (self.find_empty_box(matrix, l , size) ):
             return True
 
         row = l[0]
