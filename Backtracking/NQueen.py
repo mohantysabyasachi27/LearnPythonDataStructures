@@ -45,12 +45,14 @@ class NQueen(object):
             if self.sol[k][col] == 1:
                 return False
 
-        for k in range(self.N):
-            if self.sol[row][k] == 1:
+        for k1 in range(self.N):
+            print(k1, " ", row)
+            if self.sol[row][k1] == 1:
                 return False
 
         for i, j in zip(range(row, -1, -1), range(col, -1, -1)):
             if self.sol[i][j] == 1:
+
                 return False
 
         for i, j in zip(range(row, self.N, 1), range(col, -1, -1)):
